@@ -30,7 +30,7 @@ ul {
   padding-right: 15px;
   margin-right: auto;
   margin-left: auto;
-  /* outline: 1px solid red; */
+  outline: 1px solid red;
 }
 .all-nav {
   display: flex;
