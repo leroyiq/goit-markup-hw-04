@@ -81,6 +81,8 @@ ul {
   text-decoration: none;
   line-height: 1.14;
   color: var(--color-nav);
+  align-items: center;
+  justify-content: center;
 }
 .border {
   border-bottom: 1px solid #ececec;
@@ -102,7 +104,15 @@ ul {
 .back-color {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--header-footer);
+  background-color: #c4c4c4;
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-img.jpg);
 }
 .footer-color {
   background-color: var(--header-footer);
@@ -232,6 +242,9 @@ ul {
   line-height: 1.18;
 }
 .team-bg {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
   background-color: var(--team-bg);
   padding-top: 94px;
   padding-bottom: 94px;
@@ -341,4 +354,23 @@ img {
   line-height: 1.87;
   color: var(--category-search);
   letter-spacing: 0.03em;
+}
+.contact-icon {
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  fill: var(--category-search);
+}
+.nav-link:hover .contact-icon {
+  fill: var(--hover-focus);
+}
+.diff-icon {
+  display: inline-flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--team-bg);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
 }
