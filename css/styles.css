@@ -216,6 +216,7 @@ ul {
   justify-content: space-between;
 }
 .team-item {
+  padding-bottom: 30px;
   background-color: #ffffff;
   border: transparent;
   border-radius: 0px 0px 4px 4px;
@@ -235,8 +236,9 @@ ul {
 }
 .team-fs {
   text-align: center;
+  margin-bottom: 16px;
 
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
   font-size: 16px;
   font-weight: 400;
   line-height: 1.18;
@@ -373,4 +375,100 @@ img {
   margin-bottom: 30px;
   justify-content: center;
   align-items: center;
+}
+.soc-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  color: #ffffff;
+}
+
+.soc-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.soc-item:first-child {
+  margin-left: 0;
+}
+.soc-item:hover,
+.soc-item:focus {
+  background-color: var(--hover-focus);
+}
+.soc-icon {
+  fill: #afb1b8;
+}
+.soc-item:hover .soc-icon,
+.soc-item:focus .soc-icon {
+  fill: currentColor;
+}
+.client {
+  max-width: 1600px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-list {
+  display: flex;
+  list-style: none;
+}
+.card-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.client-item {
+  margin-left: 30px;
+}
+.client-item:first-child {
+  margin-left: 0;
+}
+.client-link {
+  fill: #afb1b8;
+}
+.card-client:hover,
+.card-client:focus {
+  border-color: var(--hover-focus);
+  cursor: pointer;
+}
+.card-client:hover .client-link,
+.card-client:focus .client-link {
+  fill: var(--hover-focus);
+}
+.add {
+  color: var(--bgcolor);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+.comunity {
+  display: flex;
+}
+.comunity-add {
+  margin-left: 70px;
+}
+.comunity-list {
+  display: flex;
+}
+.comunity-list .soc-item {
+  background-color: #ffffff1a;
+}
+.comunity-list .soc-item:hover,
+.comunity-list .soc-item:focus {
+  background-color: var(--hover-focus);
 }
