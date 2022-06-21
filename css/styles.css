@@ -290,7 +290,8 @@ ul {
 .btn:focus {
   color: var(--bgcolor);
   background-color: var(--hover-focus);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014,
+    0px 3px 1px 0px #0000001a;
 }
 .btn:active {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
@@ -384,6 +385,10 @@ img {
 }
 .soc-link {
   display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 206px;
+  height: 44px;
   justify-content: center;
   align-items: center;
   list-style: none;
@@ -441,15 +446,22 @@ img {
   margin-left: 0;
 }
 .client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   fill: #afb1b8;
 }
-.card-client:hover,
-.card-client:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--hover-focus);
   cursor: pointer;
 }
-.card-client:hover .client-link,
-.card-client:focus .client-link {
+.client-link:hover .client-pic,
+.client-link:focus .client-pic {
   fill: var(--hover-focus);
 }
 .add {
@@ -478,4 +490,7 @@ img {
 .comunity-list .soc-item:focus {
   background-color: var(--hover-focus);
   cursor: pointer;
+}
+.soc-comunity-footer {
+  fill: var(--bgcolor);
 }
