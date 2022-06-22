@@ -321,23 +321,15 @@ ul {
 .card:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
-.card:hover,
-.card:focus {
+.examples-link {
+  display: block;
+  text-decoration: none;
+}
+.examples-link:hover,
+.examples-link:focus {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.examples-list {
-  display: block;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border: 1px solid #eeeeee;
-}
-.examples-list:nth-child(3n) {
-  margin-right: 0;
-}
-.examples-list:nth-last-child(-n + 3) {
-  margin-bottom: 0;
 }
 img {
   display: block;
@@ -383,40 +375,47 @@ img {
   justify-content: center;
   align-items: center;
 }
+.soc-list {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
 .soc-link {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 206px;
-  height: 44px;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  color: #ffffff;
-}
-
-.soc-item {
-  display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
   background-color: #ffffff;
   border-radius: 50%;
+
+  color: #ffffff;
+}
+.soc-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   margin-left: 10px;
 }
 .soc-item:first-child {
   margin-left: 0;
 }
-.soc-item:hover,
-.soc-item:focus {
+.soc-link:hover,
+.soc-link:focus {
   background-color: var(--hover-focus);
 }
 .soc-icon {
   fill: #afb1b8;
 }
-.soc-item:hover .soc-icon,
-.soc-item:focus .soc-icon {
+.soc-link:hover .soc-icon,
+.soc-link:focus .soc-icon {
   fill: currentColor;
 }
 .client {
@@ -483,11 +482,11 @@ img {
 .comunity-list {
   display: flex;
 }
-.comunity-list .soc-item {
+.soc-link.comunity-link {
   background-color: #ffffff1a;
 }
-.comunity-list .soc-item:hover,
-.comunity-list .soc-item:focus {
+.soc-link.comunity-link:hover,
+.soc-link.comunity-link:focus {
   background-color: var(--hover-focus);
   cursor: pointer;
 }
